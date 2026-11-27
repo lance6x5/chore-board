@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-27
+
+### Added
+- Anonymous visit counter in the footer (open-source Abacus counter, no signup): one count per browser
+  session, skipped on localhost and when Do Not Track / Global Privacy Control is on, never cached by the
+  service worker, and hidden if the counter can't be reached.
+- README visits badge and a "Privacy & analytics" section.
+
+### Changed
+- Reworded "Data stays on this device" / "Nothing is sent to a server" to mention the anonymous visit count.
+
 ## [1.0.0] - 2026-11-27
 
 ### Added
@@ -28,5 +39,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Nothing yet (first release).
 
-[Unreleased]: https://github.com/lance6x5/chore-board/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/lance6x5/chore-board/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/lance6x5/chore-board/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/lance6x5/chore-board/releases/tag/v1.0.0

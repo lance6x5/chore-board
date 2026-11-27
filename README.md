@@ -4,6 +4,8 @@
 
 # Chore Champs
 
+![Visits](https://abacus.jasoncameron.dev/get/lance6x5.github.io/chore-board/shield)
+
 **Little helpers, big wins.** A family chore and allowance board for a shared tablet or phone.
 Kids tap the chores they've finished to earn points; a parent PIN controls approvals and rewards.
 
@@ -24,12 +26,23 @@ Live app: https://lance6x5.github.io/chore-board/
 - Installable **PWA** that works offline, light and dark mode, keyboard and screen-reader friendly,
   works in portrait phones and landscape tablets.
 
-> **Data lives on one device.** Everything is stored in this browser's IndexedDB. Nothing is sent to a server.
+> **Data lives on one device.** Everything is stored in this browser's IndexedDB. Your chore data is never sent to a server;
+> the only outside request is an anonymous visit count (see [Privacy & analytics](#privacy--analytics)).
 > Use *Parent → Settings → Export backup* to back up or move to another device.
+
+## Privacy & analytics
+
+Chore Champs counts one anonymous page load per browser session using the open-source
+[Abacus](https://github.com/JasonLovesDoggo/abacus) counter, shown as a small visit count in the footer.
+
+- No cookies, and no personal or app data is sent or stored (the request carries no parameters).
+- Do Not Track and Global Privacy Control are respected: your visit is not counted (the total is only read).
+- Like any web request, it reveals your IP address to the counter service.
+- The count is approximate (it includes bots and is not unique visitors) and public.
 
 ## Tech
 
-React 18 + Vite 5, `vite-plugin-pwa`, Vitest. No backend. Hash routing (`#/kid/<id>`, `#/parent/<tab>`)
+React 18 + Vite 5, `vite-plugin-pwa`, Vitest. No backend (only the anonymous Abacus visit counter). Hash routing (`#/kid/<id>`, `#/parent/<tab>`)
 so refreshes never 404 on GitHub Pages.
 
 ```
@@ -38,7 +51,7 @@ src/
   hooks.js           IndexedDB-backed store, hash router, "today" clock
   components/        Home, KidBoard, Modal, PinDialog, ConfirmDialog, Confetti, Avatar, WeekStrip, Feedback
   parent/            ParentGate, ParentArea + tabs (Approvals, Chores, Kids, Rewards, Summary, Settings)
-  lib/               pure logic: dates, schedule, points, actions, data (validation), pin, db, feedback
+  lib/               pure logic: dates, schedule, points, actions, data (validation), pin, db, feedback, visits
 tests/               Vitest unit tests for the pure logic
 ```
 

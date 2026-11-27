@@ -4,6 +4,7 @@ import Home from './components/Home.jsx';
 import KidBoard from './components/KidBoard.jsx';
 import Confetti from './components/Confetti.jsx';
 import Feedback from './components/Feedback.jsx';
+import VisitCount from './components/VisitCount.jsx';
 import ParentGate from './parent/ParentGate.jsx';
 import ParentArea from './parent/ParentArea.jsx';
 
@@ -106,7 +107,8 @@ export default function App() {
       <footer className="app-footer">
         <span>Chore Champs v{__APP_VERSION__}</span>
         <span aria-hidden="true"> · </span>
-        <span>Data stays on this device.</span>
+        <span>Your chore data stays on this device.</span>
+        <VisitCount />
         <Feedback />
       </footer>
 

@@ -207,6 +207,10 @@ main:focus {
   color: var(--muted);
 }
 
+.visit-count[hidden] {
+  display: none;
+}
+
 .loading {
   min-height: 100vh;
   display: grid;

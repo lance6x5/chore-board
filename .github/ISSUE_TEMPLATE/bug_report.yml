@@ -1,0 +1,43 @@
+name: Bug report
+description: Something in Chore Champs is broken or not working as expected.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve Chore Champs! Please don't include personal data (kids' names, PINs, backups).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      placeholder: e.g. 1.0.0
+  - type: input
+    id: environment
+    attributes:
+      label: Browser / OS
+      placeholder: e.g. Safari on iPad, Chrome on Android
+  - type: textarea
+    id: notes
+    attributes:
+      label: Screenshots / notes

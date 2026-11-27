@@ -6,6 +6,10 @@
 
 ![Visits](https://abacus.jasoncameron.dev/get/lance6x5.github.io/chore-board/shield)
 
+A **Silverlight DevTech** project · © 2026 Silverlight DevTech. Source-available under the [PolyForm Noncommercial License 1.0.0](LICENSE.md).
+
+More apps: [lance6x5.github.io](https://lance6x5.github.io/)
+
 **Little helpers, big wins.** A family chore and allowance board for a shared tablet or phone.
 Kids tap the chores they've finished to earn points; a parent PIN controls approvals and rewards.
 
@@ -89,3 +93,21 @@ Chore Champs follows [Semantic Versioning](https://semver.org/). The version in 
 - **PATCH** - bug fixes.
 
 Changes are recorded in [CHANGELOG.md](CHANGELOG.md) (Keep a Changelog format).
+
+## License
+
+Chore Champs is **source-available**, not OSI-approved open source. It is licensed under the
+[PolyForm Noncommercial License 1.0.0](LICENSE.md) (SPDX: `PolyForm-Noncommercial-1.0.0`).
+
+- **Free for noncommercial use**: personal, educational, research, nonprofit and other noncommercial use.
+- **Commercial use requires a separate commercial license** from Silverlight DevTech. This includes selling it,
+  hosting it as a paid service, or using it inside a business product. To ask about one, open a
+  [GitHub issue](https://github.com/lance6x5/chore-board/issues) on this repo.
+- **Redistributing?** Keep [LICENSE.md](LICENSE.md) and its `Required Notice` line with every copy.
+
+Third-party dependencies keep their own licenses.
+
+## Trademarks
+
+Chore Champs and its logo are trademarks of Silverlight DevTech. The license covers the code only, not the names
+or logos, so forks must use a different name and logo.

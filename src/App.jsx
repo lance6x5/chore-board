@@ -110,6 +110,16 @@ export default function App() {
         <span>Your chore data stays on this device.</span>
         <VisitCount />
         <Feedback />
+        <p className="studio-credit">
+          <img src={`${BASE}silverlight-mark.svg`} alt="" width="16" height="16" />
+          <span>A Silverlight DevTech project</span>
+          <span aria-hidden="true"> · </span>
+          <span>© 2026 Silverlight DevTech</span>
+          <span aria-hidden="true"> · </span>
+          <a href="https://github.com/lance6x5/chore-board/blob/main/LICENSE.md">Noncommercial license</a>
+          <span aria-hidden="true"> · </span>
+          <a href="https://lance6x5.github.io/">More apps</a>
+        </p>
       </footer>
 
       <div className={`toast ${toast ? 'show' : ''}`} role="status" aria-live="polite">

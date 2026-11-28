@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.1] - 2026-11-27
+
+### Changed
+- Footer studio credit now uses the Silverlight DevTech company mark (the "47 Ag" periodic-table tile), replacing the interim crescent mark.
+
 ## [1.2.0] - 2026-11-27
 
 ### Added
@@ -51,6 +56,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Nothing yet (first release).
 
-[Unreleased]: https://github.com/lance6x5/chore-board/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/lance6x5/chore-board/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/lance6x5/chore-board/compare/v1.2.0...v1.2.1
 [1.1.0]: https://github.com/lance6x5/chore-board/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/lance6x5/chore-board/releases/tag/v1.0.0
